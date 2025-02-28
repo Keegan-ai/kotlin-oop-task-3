@@ -141,14 +141,19 @@ class Steps() {
      * etc.
      */
     fun show() {
-
+     var info: String = ""
+         info = "Step "
     }
 
     /**
      * Return the number of gnomes on steps
      */
     fun gnomeCount(): Int {
-        return 0
+       var x = 0
+        for (step in steps) {
+            if (step != null) {x++}
+        }
+        return x
     }
 
     /**
